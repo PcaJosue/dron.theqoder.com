@@ -4,34 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap + SCSS Project</title>
+    <title>Revolutionize Your Drone Experience with the Bwine F7GB2 4K Camera Drone</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css?v=1.0">
 
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">My Project</a>
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo/logo.png" alt="Logo" width="50" height="50">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link" href="#features">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#modes">Modes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#comparation">Comparation</a>
                     </li>
                 </ul>
             </div>
@@ -39,68 +41,187 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero bg-primary text-white text-center py-5">
+    <header class="hero text-center">
         <div class="container">
-            <h1 class="display-4">Welcome to My Project</h1>
-            <p class="lead">A clean and responsive website using Bootstrap and SCSS</p>
-            <a href="#about" class="btn btn-light mt-3">Learn More</a>
+            <h1 class="display-4">Revolutionize Your Drone Experience <br>with the Bwine F7GB2 4K Camera Drone</h1>
+            <p class="lead">Unmatched Performance, Exceptional Features <br> Designed for Beginners and Professionals.
+            </p>
+            <a href="https://www.amazon.com/Bwine-Batteries-Brushless-Transmission-Resistance/dp/B09KH8GBYL/ref=sr_1_1_sspa?sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+                rel="nofollow sponsored" class="btn btn-light mt-3"><strong>Own the Skies – Buy Now on
+                    Amazon!</strong></a>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="py-5">
+    <section id="features" class="py-5" data-aos="fade-right">
         <div class="container">
-            <h2 class="text-center mb-4">About Us</h2>
+            <h2 class="text-center mb-4">Why Choose the Bwine F7GB2 Drone?</h2>
             <div class="row">
-                <div class="col-md-6">
-                    <p>
-                        This project is built using Bootstrap for responsiveness and SCSS for powerful styling.
-                        Enjoy smooth animations, organized assets, and a clean, modern design.
-                    </p>
-                    <ul>
-                        <li>Fully responsive layout</li>
-                        <li>Custom animations</li>
-                        <li>Clean and optimized styles</li>
-                    </ul>
+                <div class="col-md-4 col-sm-6 text-center feature">
+                    <img src="assets/images/feature-1.png" alt="dron with 4k uhd text">
+                    <h3>4K UHD Camera</h3>
+                    <p>Capture breathtaking images and videos with a 120° FOV lens and 5x digital zoom.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center feature">
+                    <img src="assets/images/feature-2.png" alt="dron with L6 wind resistence text">
+                    <h3>Stability Redefined</h3>
+                    <p>The 3-axis gimbal ensures smooth and shake-free shots</p>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center feature">
+                    <img src="assets/images/feature-3.png" alt="dron with 14.7ft/sec text">
+                    <h3>Extended Flight Time</h3>
+                    <p>Up to 75 minutes of flying with three powerful 2600mAh batteries</p>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center feature">
+                    <img src="assets/images/feature-4.png" alt="dron with gps features">
+                    <h3>Smart GPS Features</h3>
+                    <p>Enjoy auto-return, follow-me mode, and intelligent route planning</p>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center feature">
+                    <img src="assets/images/feature-5.png" alt="dron with gps features">
+                    <h3>Beginner-Friendly</h3>
+                    <p>With a user-friendly app and instructional videos, anyone can fly like a pro</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light " data-aos="fade-up" >
-        <div class="container">
-            <h2 class="text-center mb-4">Contact Us</h2>
-            <form>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
-                </div>
-                <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </div>
-            </form>
+    <div class="hero2"></div>
+
+    <section id="modes" data-aos="fade-up">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <img src="assets/images/modes.png" class="w-100" alt="different modes">
+            </div>
+            <div class="col-md-6 col-sm-12 text-center align-content-center ">
+                <h2>For Every Terrain and Adventure</h2>
+                <h3>Built for Every Scenario</h3>
+                <p class="mt-5 text-center">The Bwine F7GB2 adapts effortlessly to various terrains, including grass,
+                    snow, sand, and concrete. <br>
+                    Its durable design, collision avoidance system, and L6-level wind resistance make it the perfect
+                    companion for outdoor enthusiasts. <br>Whether you're cycling, skiing, or surfing, this drone
+                    ensures
+                    you never miss a moment.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 text-center align-content-center ">
+                <h2>Advanced Technology Meets Practical Design</h2>
+                <table class="mt-5">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Specification</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Camera Resolution</td>
+                            <td>4K UHD, 5x Zoom</td>
+                        </tr>
+                        <tr>
+                            <td>Battery Life</td>
+                            <td>75 Minutes (3 packs)</td>
+                        </tr>
+                        <tr>
+                            <td>Maximum Range</td>
+                            <td>2 Miles</td>
+                        </tr>
+                        <tr>
+                            <td>Connectivity</td>
+                            <td>5G WiFi</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>5.39 pounds</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img src="assets/images/item.png" class="w-100" alt="picture of the dron">
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-3 bg-dark text-white text-center">
-        <p class="mb-0">© 2024 My Project. All Rights Reserved.</p>
-    </footer>
+    <section id="testimonials" data-aos="zoom-out-down" >
+        <h2>Hear from Happy Flyers</h2>
+        <div class="text-center">
+            <blockquote>"The best drone I've ever used! The camera quality and flight stability are
+                unmatched"</blockquote>
+            <p>Verified Amazon Buyer</p>
+        </div>
+        <div class="text-center">
+            <blockquote>"Perfect for beginners like me. The instructional videos were super helpful!"
+            </blockquote>
+            <p>Drone Enthusiast</p>
+        </div>
+    </section>
+
+    <div class="hero3"></div>
+
+    <section class="my-5 text-center" id="comparation" data-aos="fade-down">
+        <h2>Why the Bwine F7GB2 Stands Out</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Bwine F7GB2</th>
+                    <th>Competitor A</th>
+                    <th>Competitor B</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Camera Quality</td>
+                    <td>4K UHD</td>
+                    <td>1080p</td>
+                    <td>4K UHD</td>
+                </tr>
+                <tr>
+                    <td>Flight Time</td>
+                    <td>75 mins</td>
+                    <td>50 mins</td>
+                    <td>60 mins</td>
+                </tr>
+                <tr>
+                    <td>GPS Auto Return</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Beginner-Friendly Mode</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>$559.99</td>
+                    <td>$499.99</td>
+                    <td>$599.99</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="https://www.amazon.com/Bwine-Batteries-Brushless-Transmission-Resistance/dp/B09KH8GBYL/ref=sr_1_1_sspa?sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+            rel="nofollow sponsored" class="btn btn-light mt-3"><strong>Buy Now on Amazon!</strong></a>
+
+    </section>
+
+    <section class="hero4 text-center">
+        <h2 class="display-4">Don’t Wait – Transform Your Drone Experience Today</h2>
+        <p class="lead">Take the first step toward professional-grade aerial photography with the Bwine F7GB2 Drone.
+            <br>
+            With advanced features, reliable performance, and unmatched value, this drone is the perfect tool for
+            beginners and experts alike.</p>
+        <a href="https://www.amazon.com/Bwine-Batteries-Brushless-Transmission-Resistance/dp/B09KH8GBYL/ref=sr_1_1_sspa?sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+            rel="nofollow sponsored" class="btn btn-light mt-3"><strong>Own the Skies – Buy Now on
+                Amazon!</strong></a>
+    </section>
+
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -111,6 +232,16 @@
             easing: 'ease', // Tipo de transición
             once: true // Ejecuta la animación solo una vez
         });
+
+        document.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+
     </script>
 
 </body>

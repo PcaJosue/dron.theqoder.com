@@ -1,23 +1,215 @@
 // Importa Bootstrap SCSS
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-$primary-color: #3498db;
 
 body {
-  background-color: $primary-color;
   font-family: Arial, sans-serif;
+  position: relative;
 }
 
-// Animaciones personalizadas
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
+.navbar {
+  background-color: transparent !important;
+  /* Hace la barra de navegación transparente */
+  box-shadow: none;
+  /* Elimina cualquier sombra */
+
+  & a {
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      font-weight: bold;
+    }
+
+    &:active {
+      transform: translateY(2px);
+      color: #b3b1b1;
+    }
   }
 }
 
-.bounce-animation {
-  animation: bounce 2s infinite;
+.navbar.scrolled {
+  color: white;
+  /* Cambia el color del texto al tener fondo */
+  transition: color 0.3s ease;
+  /* Suaviza la transición del color */
+  background-color: #181822 !important;
+}
+
+
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  & h1 {
+    color: #F7F7F7;
+    font-weight: bold;
+  }
+
+  & p {
+    color: #fdfdfdc7;
+    font-weight: bold;
+  }
+
+  & .btn {
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+}
+.feature {
+  -webkit-box-shadow: 6px 5px 18px -1px rgba(143, 141, 143, 0.1);
+  -moz-box-shadow: 6px 5px 18px -1px rgba(143, 141, 143, 0.1);
+  box-shadow: 6px 5px 18px -1px rgba(143, 141, 143, 0.1);
+  padding: 1rem;
+  h3 {
+    margin-top: 15px;
+  }
+  p {
+    color: #4e4e4e;
+  }
+}
+
+.hero2{
+  height: 100vh;
+  background-image: url("../images/hero2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#modes{
+  h3 {
+    color: #777777;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 80%; /* Adjust table width */
+    max-width: 600px; /* Restrict maximum width */
+    margin: 20px auto;
+    background-color: #1e1e1e; /* Slightly lighter background for the table */
+    border: 1px solid #333; /* Table border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #333; /* Row separator */
+  }
+
+  th {
+    background-color: #333; /* Darker background for header */
+    color: #f8f8f8; /* Light text for header */
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  td {
+    color: #dcdcdc; /* Light gray for body text */
+  }
+
+  tr:hover {
+    background-color: #444; /* Highlight row on hover */
+    transition: background-color 0.3s ease;
+  }
+}
+
+#testimonials{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #cacacc88;
+  blockquote {
+    color: #727171;
+  }
+}
+
+
+.hero3{
+  height: 50vh;
+  background-image: url("../images/hero3.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#comparation{
+  table {
+    border-collapse: collapse;
+    width: 90%; /* Adjust table width */
+    max-width: 800px; /* Restrict maximum width */
+    margin: 20px auto;
+    background-color: #1e1e1e; /* Slightly lighter background for the table */
+    border: 1px solid #333; /* Table border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #333; /* Row separator */
+  }
+
+  th {
+    background-color: #333; /* Darker background for header */
+    color: #f8f8f8; /* Light text for header */
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  td {
+    color: #dcdcdc; /* Light gray for body text */
+  }
+
+  tr:hover {
+    background-color: #444; /* Highlight row on hover */
+    transition: background-color 0.3s ease;
+  }
+
+  th:first-child, td:first-child {
+    text-align: left;
+  }
+
+  a{
+    color: white;
+    background-color: #181822;
+    &:hover{
+      background-color: #302d2d;
+    }
+  }
+}
+
+.hero4{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-image: url("../images/hero4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
 }
