@@ -4,10 +4,11 @@
   "main": "index.js",
   "scripts": {
     "serve": "live-server .",
-    "sass": "sass --watch  scss/main.scss assets/css/main.css --quiet-deps",
+    "sass-watch": "sass --watch  scss/main.scss assets/css/main.css --quiet-deps",
+    "sass": "sass scss/main.scss assets/css/main.css --quiet-deps",
     "postcss": "postcss assets/css/main.css -o assets/css/main.min.css",
     "build-css": "npm run sass && npm run postcss",
-    "start": "concurrently \"npm run sass\" \"npm run serve\"",
+    "start": "concurrently \"npm run sass-watch\" \"npm run serve\"",
     "build": "npm run sass && npm run postcss && cp index.html dist/ && cp -R assets dist/ && cp favicon.ico dist/ && cp CNAME dist/ && cp sitemap.xml dist/"
   },
   "keywords": [],
