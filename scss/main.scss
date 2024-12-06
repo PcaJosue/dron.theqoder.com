@@ -1,0 +1,23 @@
+// Importa Bootstrap SCSS
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$primary-color: #3498db;
+
+body {
+  background-color: $primary-color;
+  font-family: Arial, sans-serif;
+}
+
+// Animaciones personalizadas
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.bounce-animation {
+  animation: bounce 2s infinite;
+}
